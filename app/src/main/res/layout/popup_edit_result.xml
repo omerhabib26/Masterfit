@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_field_white"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="#000000"
+        android:text="Edit Result"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_field_holo"
+        android:layout_below="@+id/iv_login_logo"
+
+        android:padding="8dp"
+        android:layout_margin="20dp"
+
+        android:hint="Word / Phrase"
+        android:textColor="#000000"
+        android:textColorHint="#878787"
+        android:inputType="text"
+        android:id="@+id/et_login_forgot_pw_email"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:weightSum="2"
+        android:gravity="center_horizontal"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:background="@drawable/rounded_field_black"
+            android:text="Send"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btn_popup_verify_email_yes"
+
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            ></View>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:background="@drawable/rounded_field_black"
+            android:text="Cancel"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btn_popup_verify_email_no"
+
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
